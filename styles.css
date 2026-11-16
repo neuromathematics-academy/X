@@ -529,11 +529,41 @@
   }
 }
 
+.faculty-photo-frame {
+    width: 100%;
+    max-width: 390px;
+    aspect-ratio: 4 / 5;
+    padding: 10px;
+    overflow: hidden;
+    border: 2px solid #eab52d;
+    border-radius: 22px;
+    background: linear-gradient(
+        135deg,
+        #fff4ce,
+        #ffffff,
+        #eab52d
+    );
+    box-shadow: 0 20px 55px rgba(13,35,70,.15);
+}
+
 .faculty-photo {
     width: 100%;
-    aspect-ratio: 4 / 5;
-    object-fit: cover;
-    object-position: center top;
-    border-radius: 16px;
+    height: 100%;
     display: block;
+    object-fit: cover;
+    object-position: center 20%;
+    border-radius: 14px;
+}
+
+@media (max-width: 767px) {
+    .faculty-photo-frame {
+        max-width: 330px;
+        margin: auto;
+        aspect-ratio: 4 / 5;
+        padding: 8px;
+    }
+
+    .faculty-photo {
+        object-position: center 18%;
+    }
 }
