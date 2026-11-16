@@ -529,21 +529,27 @@
   }
 }
 
+/* Faculty photo - desktop and mobile fix */
+
 .faculty-photo-frame {
     width: 100%;
-    max-width: 390px;
-    aspect-ratio: 4 / 5;
-    padding: 10px;
+    max-width: 300px;
+    height: 360px;
+    margin: 0 auto;
+    padding: 8px;
     overflow: hidden;
+
     border: 2px solid #eab52d;
-    border-radius: 22px;
+    border-radius: 20px;
+
     background: linear-gradient(
         135deg,
-        #fff4ce,
+        #fff1bd,
         #ffffff,
-        #eab52d
+        #dca923
     );
-    box-shadow: 0 20px 55px rgba(13,35,70,.15);
+
+    box-shadow: 0 15px 40px rgba(0,0,0,.18);
 }
 
 .faculty-photo {
@@ -551,19 +557,22 @@
     height: 100%;
     display: block;
     object-fit: cover;
-    object-position: center 20%;
-    border-radius: 14px;
+    object-position: center top;
+    border-radius: 13px;
 }
 
+/* Laptop screens */
+@media (min-width: 768px) {
+    .faculty-photo-frame {
+        max-width: 280px;
+        height: 340px;
+    }
+}
+
+/* Mobile screens */
 @media (max-width: 767px) {
     .faculty-photo-frame {
-        max-width: 330px;
-        margin: auto;
-        aspect-ratio: 4 / 5;
-        padding: 8px;
-    }
-
-    .faculty-photo {
-        object-position: center 18%;
+        max-width: 260px;
+        height: 325px;
     }
 }
