@@ -531,8 +531,8 @@
 
 /* NeuroMath Faculty Golden Frame */
 .faculty-photo-frame {
-    width: 250px !important;
-    height: 310px !important;
+    width: 210px !important;
+    height: 270px !important;
     max-width: 100%;
     margin: 0 auto;
     padding: 7px;
@@ -556,7 +556,7 @@
 
 @media (max-width: 767px) {
     .faculty-photo-frame {
-        width: 230px !important;
-        height: 285px !important;
+        width: 210px !important;
+        height: 270px !important;
     }
 }
